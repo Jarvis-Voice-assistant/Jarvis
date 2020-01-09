@@ -4,17 +4,6 @@ import time
 import pyttsx3
 import speech_recognition as sr
 from fuzzywuzzy import fuzz
-from PyQt5 import QtCore, QtGui, QtWidgets
-from jar import Ui_Form
-
-#Создаем приложение
-app = QtWidgets.QApplication(sys.argv)
-
-#Создаем интерфейс
-Form = QtWidgets.QWidget()
-ui = Ui_Form()
-ui.setupUi(Form)
-Form.show()
 
 #Логика
 speak_engine = pyttsx3.init()
@@ -80,4 +69,3 @@ while True:
 		speak_engine.say("Goodbye, sir!")
 		speak_engine.runAndWait()
 		break
-		sys.exit(app.exec_())
