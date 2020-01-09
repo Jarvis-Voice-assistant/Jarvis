@@ -5,7 +5,6 @@ import pyttsx3
 import speech_recognition as sr
 from fuzzywuzzy import fuzz
 
-#Логика
 speak_engine = pyttsx3.init()
 speak_engine.say("Hello, sir! Do you want something?")
 speak_engine.runAndWait()
